@@ -672,6 +672,25 @@ strong {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.1em;
+  position: relative;
+}
+
+.title-2 > div {
+  position: absolute;
+  top: 50%;
+  left: 95px;
+  opacity: 0.1;
+  color: #d19676;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 67px;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  line-height: 1em;
 }
 
 .title-2 > span {
@@ -690,6 +709,69 @@ strong {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+}
+
+.text-content h2 {
+  color: #496f3b;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1em;
+  margin-bottom: 1.28em;
+  max-width: 350px;
+  position: relative;
+}
+
+.text-content h2 > div {
+  position: absolute;
+  top: 50%;
+  left: 95px;
+  opacity: 0.1;
+  color: #d19676;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 67px;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  line-height: 1em;
+}
+
+.text-content h3 {
+  color: #496f3b;
+  font-family: "3satHurme-SemiBold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+
+.text-content p {
+  color: #496f3b;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.35em;
+  margin-bottom: 1.46em;
+}
+
+.text-content p ~ h2 {
+  margin-top: 2.03em;
+}
+
+.text-content p ~ h3 {
+  margin-top: -0.6em;
+}
+
+.text-content figure {
+  display: block;
+  text-align: center;
+  margin: 20px 0 30px;
+}
+
+.text-content figure img {
+  max-width: 100%;
 }
 
 /**
@@ -1782,6 +1864,26 @@ button.swiper-pagination-bullet {
   padding-bottom: 22px;
 }
 
+.hero__logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 308px;
+  margin-bottom: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__logo img {
+  width: 100%;
+}
+
+.hero__logo ~ .hero__title {
+  font-family: "3satHurme-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
 .hero__title {
   font-family: "3satHurme", sans-serif;
   color: #d19676;
@@ -1894,6 +1996,7 @@ button.swiper-pagination-bullet {
 
 .home-text-block__title {
   margin-bottom: 91px;
+  max-width: 335px;
 }
 
 .home-text-block__item {
@@ -2425,6 +2528,14 @@ button.swiper-pagination-bullet {
   font-weight: 700;
 }
 
+.about-us .hero__body {
+  padding-top: 37px;
+}
+
+.about-us__content {
+  margin: 73px 0 37px;
+}
+
 .video-block {
   margin-bottom: 104px;
 }
@@ -2913,6 +3024,8 @@ button.swiper-pagination-bullet {
   .home-text-block__title {
     text-align: center;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home-text-block__item {
@@ -2991,6 +3104,7 @@ button.swiper-pagination-bullet {
 
   .footer__title {
     font-size: 32px;
+    margin: 90px auto 150px;
   }
 
   .footer__column {
@@ -3037,6 +3151,28 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 525px) {
+  .title-2 > div {
+    font-size: 60px;
+  }
+
+  .text-content h2 {
+    font-size: 30px;
+  }
+
+  .text-content h2 > div {
+    font-size: 60px;
+  }
+
+  .text-content h3 {
+    font-size: 24px;
+  }
+
+  .text-content p {
+    font-size: 16px;
   }
 }
 
